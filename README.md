@@ -21,7 +21,7 @@
 <p class="has-line-data" data-line-start="20" data-line-end="21">Cara instalasi aplikasi Kalkulator:</p>
 <ul>
 <li class="has-line-data" data-line-start="21" data-line-end="22">Clone github repository,</li>
-<li class="has-line-data" data-line-start="22" data-line-end="23">Copy file hasil download ke folder ‘C:/xampp/htcdocs/kalkulator’, jika belum ada silahkan buat folder ‘kalkulator’</li>
+<li class="has-line-data" data-line-start="22" data-line-end="23">Copy file hasil download ke folder ‘C:/xampp/htdocs/kalkulator’, jika belum ada silahkan buat folder ‘kalkulator’</li>
 <li class="has-line-data" data-line-start="23" data-line-end="24">Running Apache pada XAMPP</li>
 <li class="has-line-data" data-line-start="24" data-line-end="26">Buka URL pada web browser ‘localhost/kalkulator’</li>
 </ul>
