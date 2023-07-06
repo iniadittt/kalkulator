@@ -1,28 +1,36 @@
 <?php
+
+    // Fungsi untuk operasi penjumlahan
     function penjumlahan($bilangan1, $bilangan2) {
         $result = $bilangan1 + $bilangan2;
         return $result;
     }
+
+    // Fungsi untuk operasi pengurangan
     function pengurangan($bilangan1, $bilangan2) {
         $result = $bilangan1 - $bilangan2;
         return $result;
     }
+
+    // Fungsi untuk operasi perkalian
     function perkalian($bilangan1, $bilangan2) {
         $result = $bilangan1 * $bilangan2;
         return $result;
     }
+
+    // Fungsi untuk operasi pembagian
     function pembagian($bilangan1, $bilangan2) {
         $result = $bilangan1 / $bilangan2;
         return $result;
     }
 
-    if(isset($_POST['submit'])){
-        $bilangan1 = $_POST['bilangan1'];
-        $bilangan2 = $_POST['bilangan2'];
-        $jumlah = penjumlahan($bilangan1, $bilangan2);
-        $kurang = pengurangan($bilangan1, $bilangan2);
-        $kali = perkalian($bilangan1, $bilangan2);
-        $bagi = pembagian($bilangan1, $bilangan2);
+    if(isset($_POST['submit'])){ // Apabila button Hitung ditekan
+        $bilangan1 = $_POST['bilangan1']; // Mengambil bilangan 1
+        $bilangan2 = $_POST['bilangan2']; // Mengambil bilangan 2
+        $jumlah = penjumlahan($bilangan1, $bilangan2); // Operasi penjumlahan dari fungsi penjumlahan
+        $kurang = pengurangan($bilangan1, $bilangan2); // Operasi pengurangan dari fungsi pengurangan
+        $kali = perkalian($bilangan1, $bilangan2); // Operasi perkalian dari fungsi perkalian
+        $bagi = pembagian($bilangan1, $bilangan2); // Operasi pembagian dari fungsi pembagian
     }
 ?>
 <!doctype html>
@@ -52,7 +60,7 @@
         </form>
         <div>
             <?php
-                if(!empty($_POST['submit'])){
+                if(!empty($_POST['submit'])){ // Jika button hitung sudah ditekan maka tampilkan
                     echo "<div class='py-5'>";
                     echo "<p>Hasil penjumlahan adalah : $jumlah</p>";
                     echo "<p>Hasil pengurangan adalah : $kurang</p>";
