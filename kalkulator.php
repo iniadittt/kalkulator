@@ -1,11 +1,28 @@
 <?php
+    function penjumlahan($bilangan1, $bilangan2) {
+        $result = $bilangan1 + $bilangan2;
+        return $result;
+    }
+    function pengurangan($bilangan1, $bilangan2) {
+        $result = $bilangan1 - $bilangan2;
+        return $result;
+    }
+    function perkalian($bilangan1, $bilangan2) {
+        $result = $bilangan1 * $bilangan2;
+        return $result;
+    }
+    function pembagian($bilangan1, $bilangan2) {
+        $result = $bilangan1 / $bilangan2;
+        return $result;
+    }
+
     if(isset($_POST['submit'])){
         $bilangan1 = $_POST['bilangan1'];
         $bilangan2 = $_POST['bilangan2'];
-        $jumlah = $bilangan1 + $bilangan2;
-        $kurang = $bilangan1 - $bilangan2;
-        $kali = $bilangan1 * $bilangan2;
-        $bagi = $bilangan1 / $bilangan2;
+        $jumlah = penjumlahan($bilangan1, $bilangan2);
+        $kurang = pengurangan($bilangan1, $bilangan2);
+        $kali = perkalian($bilangan1, $bilangan2);
+        $bagi = pembagian($bilangan1, $bilangan2);
     }
 ?>
 <!doctype html>
